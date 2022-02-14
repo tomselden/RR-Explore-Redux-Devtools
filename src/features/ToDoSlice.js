@@ -29,10 +29,9 @@ export const todoSlice = pizzaSlice({
       }
     },
 
-    // theortically should just clear the items array back to it's initial state on line 6
-    // (error: it does clear it once and then app errors out with this message => items are not iterable)
+    //clears the items array 
     clearToDo: () => {
-      return { items: { initialState } };
+      return { items: [ ] };
     },
   },
 });
